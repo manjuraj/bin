@@ -9,4 +9,4 @@ for d in $(find `pwd` -name "*.jar"); do
 done
 MY_JARS=$MY_JARS:.
 
-exec java -cp $MY_JARS $@
+exec java -Xms2g -Xmx2g -cp $MY_JARS "$@"
